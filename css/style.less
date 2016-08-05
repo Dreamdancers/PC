@@ -1,0 +1,269 @@
+@charset "utf-8";
+*{
+	margin:0;
+	padding:0;
+	-webkit-box-sizing:border-box;
+}
+html,body{
+	width:100%;
+	height:100%;
+	overflow: hidden;
+}
+a{
+	text-decoration: none;
+}
+.manu{
+	width:100%;
+	height:100%;
+	background: url(../images/tuopu-tuopu.jpg);
+	background-size: 100% 100%;
+}
+/*<--------------------------header的部分------------------------------>*/
+.header{
+	width:100%;
+	height:80px;
+	background:url(../images/tuopu-tuopu_02.jpg) repeat-x;
+	.nav{
+		width:90%;
+		height: 50px;
+		margin: 0 auto;
+		ul{
+			li{
+				float: left;
+				margin-top:10px;
+				a{
+					display: inline-block;
+					width:120px;
+					height:50px;
+					color: #fff;
+					text-align: center;
+					line-height: 50px;
+					background: url(../images/nav-top.png);
+					background-size: 100% 100%;
+				}
+			}
+		}
+	}
+}
+/*<--------------------------section的部分------------------------------>*/
+.section{
+	width:100%;
+	height:72%;
+	position:relative;
+	h1{
+		width:70px;
+		height:70px;
+		background: url(../images/navbackground.png);
+		color: #fff;
+		background-size: 100% 100%;
+		font-weight: bold;
+		position: absolute;
+		left:1%;
+		top:5px;
+		text-align: center;
+		line-height: 70px;
+		span:nth-of-type(1){
+			display:inline-block;
+			width:60px;
+			height:60px;
+			background: url(../images/navsmall.png);
+			background-size: 100% 100%;
+			position: absolute;
+			left:5px;
+			top:5px;
+			-webkit-animation:Animation 1s linear infinite;
+		}
+		span:nth-of-type(2){
+			display:inline-block;
+			width:73px;
+			height:73px;
+			background: url(../images/navbig.png);
+			background-size: 100% 100%;
+			position: absolute;
+			left:-2px;
+			top:-2px;
+			-webkit-animation:Animation 1s linear infinite reverse;
+		}
+	}
+	.contain{
+		width:100%;
+		padding:0px 20px;
+		padding-top:90px;
+	}
+	.left{
+		width:25%;
+		height: 390px;
+		float: left;
+		background:url(../images/left.png);
+		background-size: 100% 100%;
+		padding:0px 45px;
+		h2{
+			line-height: 36px;
+		}
+		select{
+			text-align: center;
+			width:100%;
+			height: 35px;
+			margin-top:20px;
+			color: #fff;
+			background:url(../images/tuopu-tu_03.png);
+			background-size: 100% 100%;
+			border:none;
+			outline: none;
+			padding-left: 8px;
+		}
+		ul{
+			width:100%;
+			height: 250px;
+			color: #fff;
+			li{
+				width:100%;
+				//height:30px;
+				line-height:30px;
+				padding-left:25px;
+				background:url(../images/t_03.png) repeat-x;
+				background-size: 100% 30px;
+				margin:5px 0px;
+				ul{
+					display: none;
+					padding-left:20px;
+					height: 100px;
+				}
+			}
+		}
+	}
+	.center{
+		float: left;
+		width:340px;
+		height:200px;
+		background:url(../images/alertbox.png);
+		background-size: 100% 100%;
+		margin:50px 150px;
+		_margin:25px 75px;
+		margin-right: 0px;
+		padding:10px 35px;
+		overflow: hidden;
+		h3{
+			line-height: 35px;
+
+		}
+		p.p1{
+			color: #fff;
+			line-height:30px;
+			span{
+				width:30px;
+				height:15px;
+				display:inline-block;
+				position: relative;
+			}
+			input{
+					position: absolute;
+					left:0;
+					top:0;	
+			}
+			input[type]{
+				z-index:99;
+				opacity:0;
+				&:checked+label{
+					background:url(../images/tuo_03.png) no-repeat;
+				}
+			}
+			label{
+					width:15px;
+					height:15px;
+					position: absolute;
+					left:0;
+					top:0px;
+					margin-top:5px;
+					background:url(../images/tuop_03.png) no-repeat;
+					padding-left:20px;
+				}
+		}
+		p.p2{
+			width:100%;
+			padding-left:35px;
+			button{
+				width:70px;
+				height:30px;
+				color: #fff;
+				background:url(../images/tuop_07.png) no-repeat;
+				background-size: 100% 100%;
+				margin:10px ;
+			}
+		}
+	}
+	.right{
+		width:24%;
+		height:290px;
+		float: right;
+		background:url(../images/right_03.png);
+		background-size: 100% 100%;
+		padding-left: 15px;
+		h2{
+			a{
+				width:50%;
+				height:40px;
+				line-height: 43px;
+				display: inline-block;
+				text-align: center;
+				&:nth-of-type(1){
+					color:#fff;
+				}
+			}
+		}
+		p{
+			color: #fff;
+		}
+	}
+}
+/*<--------------------------footer的部分------------------------------>*/
+.footer{
+	width:100%;
+	position:relative;
+	ul{
+		width:85%;
+		margin:0 auto;
+		li{
+			float: left;
+			width:65px;
+			height:65px;
+			background: url(../images/bottombox.png);
+			background-size: 100% 100%;
+			margin:0px 10px;
+			margin-top: 20px;
+		}
+	}
+	h2{
+		width:100px;
+		height:100px;		
+		color: #fff;
+		font-weight: bold;
+		position: absolute;
+		right:8%;
+		text-align: center;
+		padding-top: 26px;
+		span{
+			width:100px;
+		    height:100px;
+		    display: inline-block;	
+			background: url(../images/tuopu_03.png);
+			background-size: 100% 100%;
+			position: absolute;
+			top:0px;
+			right: 0px;
+			-webkit-animation:Animation 1s linear infinite;
+		}
+	}
+}
+
+
+/*<------------------动画效果-------------------->*/
+@-webkit-keyframes Animation{
+		form{
+			-webkit-transform:rotate(0deg)
+		}
+		to{
+			-webkit-transform:rotate(360deg)
+		}	
+
+}
